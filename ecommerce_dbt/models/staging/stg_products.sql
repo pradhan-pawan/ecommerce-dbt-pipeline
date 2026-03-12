@@ -18,7 +18,7 @@ cleaned AS (
         CONCAT(
             SUBSTRING(UPPER(category), 1, 3),
             '-',
-            LPAD(product_id::VARCHAR, 4, '0')
+            LPAD(product_id, 4, '0')
         )                                           AS product_code
     FROM source
     WHERE product_id IS NOT NULL
