@@ -1,0 +1,12 @@
+country,region,currency,is_tier1
+USA,Americas,USD,true
+UK,Europe,GBP,true
+Canada,Americas,CAD,true
+India,Asia,INR,false
+Germany,Europe,EUR,true
+France,Europe,EUR,true
+Australia,Asia Pacific,AUD,true
+Brazil,Americas,BRL,false
+Mexico,Americas,MXN,false
+Japan,Asia Pacific,JPY,true
+Unknown,Other,USD,false

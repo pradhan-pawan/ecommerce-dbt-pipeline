@@ -45,6 +45,8 @@ SELECT
         WHEN o.total_spend >= 1000 THEN 'Gold'
         WHEN o.total_spend >= 500  THEN 'Silver'
         ELSE 'Bronze'
-    END                                             AS loyalty_tier
+    END                                             AS loyalty_tier,
+    {{ safe_divide('o.completed_orders', 'o.total_orders') }} AS completion_rate,
+    {{ audit_timestamp() }}
 FROM customers c
 LEFT JOIN customer_orders o ON c.customer_id = o.customer_id
