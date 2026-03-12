@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: ecommerce_raw
+    database: ECOMMERCE_DB
+    schema: RAW
+    tables:
+      - name: customers
+      - name: orders
+      - name: products
